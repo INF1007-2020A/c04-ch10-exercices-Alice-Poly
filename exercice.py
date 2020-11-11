@@ -18,7 +18,7 @@ def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
     #     radius = np.sqrt(c[0]**2 + c[1]**2)
     #     angle = np.arctan2(c[1], c[0])
 
-    return np.array([(np.sqrt(c[0] ** 2 + c[1] ** 2), np.arctan2(c[1], c[0])) for c in cartesian_coordinates])
+    return np.array([(np.sqrt(coordinates[0] ** 2 + coordinates[1] ** 2), np.arctan2(c[1], c[0])) for coordinates in cartesian_coordinates])
 
 
 def find_closest_index(values: np.ndarray, number: float) -> int:
